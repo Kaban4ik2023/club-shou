@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  club-shou:
+    build: .
+    container_name: club-shou-site
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+    # Для SSL раскомментируй и создай папки certs/:
+    # volumes:
+    #   - ./certs/fullchain.pem:/etc/nginx/ssl/fullchain.pem:ro
+    #   - ./certs/privkey.pem:/etc/nginx/ssl/privkey.pem:ro

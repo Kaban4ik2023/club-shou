@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 33% 4%;
+    --foreground: 0 0% 100%;
+    --card: 240 20% 6%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 33% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 40 60% 58%;
+    --primary-foreground: 240 33% 4%;
+    --secondary: 240 20% 6%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 62%;
+    --accent: 338 100% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 40 60% 58%;
+    --radius: 0.5rem;
+    --sidebar-background: 240 33% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 40 60% 58%;
+    --sidebar-primary-foreground: 240 33% 4%;
+    --sidebar-accent: 240 20% 6%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 10% 20%;
+    --sidebar-ring: 40 60% 58%;
+  }
+
+  body {
+    @apply bg-club-bg text-white font-inter antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(212, 168, 83, 0.5), 0 0 40px rgba(212, 168, 83, 0.3), 0 0 60px rgba(212, 168, 83, 0.15);
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 20px rgba(255, 45, 123, 0.5), 0 0 40px rgba(255, 45, 123, 0.3), 0 0 60px rgba(255, 45, 123, 0.15);
+  }
+
+  .border-glow-gold {
+    box-shadow: 0 0 15px rgba(212, 168, 83, 0.3), inset 0 0 15px rgba(212, 168, 83, 0.1);
+  }
+
+  .border-glow-pink {
+    box-shadow: 0 0 15px rgba(255, 45, 123, 0.3), inset 0 0 15px rgba(255, 45, 123, 0.1);
+  }
+
+  .neon-text-gold {
+    color: #D4A853;
+    text-shadow: 0 0 5px #D4A853, 0 0 10px #D4A853, 0 0 20px #D4A853, 0 0 40px rgba(212, 168, 83, 0.5);
+  }
+
+  .neon-text-pink {
+    color: #FF2D7B;
+    text-shadow: 0 0 5px #FF2D7B, 0 0 10px #FF2D7B, 0 0 20px #FF2D7B, 0 0 40px rgba(255, 45, 123, 0.5);
+  }
+}
+
+@layer utilities {
+  .shimmer-bg {
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 168, 83, 0.1) 50%, transparent 100%);
+    background-size: 200% 100%;
+  }
+}

@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/club-shou/',
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,

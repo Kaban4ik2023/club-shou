@@ -3,6 +3,7 @@ import HeroSection from './sections/HeroSection';
 import PricesSection from './sections/PricesSection';
 import EventsSection from './sections/EventsSection';
 import PhotosSection from './sections/PhotosSection';
+import ReviewsSection from './sections/ReviewsSection';
 import Footer from './sections/Footer';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <PricesSection />
       <EventsSection />
       <PhotosSection />
+      <ReviewsSection />
       <Footer />
     </div>
   );
